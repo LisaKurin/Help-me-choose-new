@@ -13,6 +13,20 @@
         </div>
         <button class="addoption">Add</button>
       </div>
+      <div class="resultsection">
+      </div>
         <button>Go!</button>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js">
+        </script>
+        <script>
+        $(function() {
+          $(".resultsection").hide()
+
+          var addoption = function() {
+            $(".inputs").append("<input></input>")
+          }
+          $(".addoption").click(addoption)
+        })
+        </script>
     </body>
 </html>
