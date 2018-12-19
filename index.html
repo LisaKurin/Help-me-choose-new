@@ -1,43 +1,60 @@
 <!DOCTYPE html>
 <html lang=swe>
   <head>
-    <meta charset=utf-8>
-    <title> Hållbarhetschecka företaget! </title>
-    <link href="./main.css" rel="stylesheet" type="text/css">
-  </head>
+    <!-- Koppling till css -->
+        <link href="./new.css" rel="stylesheet" type="text/css">
+<!-- Koppling till bootstrap -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
     <body>
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/155/deciduous-tree_1f333.png" width="30" height="30" alt="">
+          </a>
+<a class="navbar-brand" href="#">Hållbarhetschecka.se</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+  <div class="navbar-nav">
+    <a class="nav-item nav-link active" href="#">Hem <span class="sr-only">(current)</span></a>
+    <a class="nav-item nav-link" href="#">Vad är CO2?</a>
+    <a class="nav-item nav-link" href="#">Om oss</a>
+    <a class="nav-item nav-link disabled" href="#">Disabled</a>
+    <form class="form-inline my-2 my-lg-0">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  </form>
+  </div>
+</div>
+</nav>
+<!-- grid 1 på första sidan -->
+<div class="blockone">
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class= "rubrik"
       <h1>Hållbarhetschecka företaget!</h1>
+    </div>
+    <div class= "undertext">
+      <p>Ställ krav på att företag tar sitt hållbarhetsansvar! Här kan du checka hur företaget ligger till inom olika hållbarhetsområden.</p>
+    </div>
+    </div>
+<!-- grid 2 på första sidan -->
+    <div class="col">
       <div class="inputsection">
-        <div class="inputs">
-          <input placeholder="Vilket företag vill du checka?"></input>
-        </div>
-      </div>
-      <div class="resultsection">
-      </div>
-        <button class="submit-btn">Checka!</button>
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js">
-        </script>
-        <script>
-        $(function() {
-          $(".resultsection").hide()
-
-          var addoption = function() {
-            $(".inputs").append("<input></input>")
-          }
-          $(".addoption").click(addoption)
-          var options = []
-          var submit = function() {
-            $('.inputsection').hide()
-            $('.resultsection').css('display', 'flex')
-            $("input").each(function() {
-              options.push($(this).val())
-            })
-            var winner = options[Math.floor(Math.random() * options.length)]
-            console.log(winner)
-            $('.resultsection').text(winner)
-          }
-          $(".submit").click(submit)
-        })
-        </script>
-    </body>
-</html>
+              <div class="inputs">
+                <input placeholder="Vilket företag vill du checka?"></input>
+              </div>
+<!-- länka checka-knappen till result.html -->
+              <a href="result.html">
+              <button class="btn btn-success" type="button">Checka!</button>
+              </a>
+            </div>
+       </div>
+     </div>
+</div>

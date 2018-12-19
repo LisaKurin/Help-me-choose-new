@@ -1,0 +1,65 @@
+.rubrik {
+  font-weight: lighter;
+  font-size: 50px;
+  letter-spacing: 2px;
+  margin-bottom: 0px;
+  margin-top: 30px;
+  font-family: system-ui;
+  color: white;
+}
+p {
+font-size: 20px;
+font-family: system-ui;
+}
+.undertext{
+margin-bottom: 100px;
+color: white;
+font-weight: lighter;
+font-family: system-ui;
+}
+
+.inputsection{
+  width: 400px;
+  height: 100px;
+  margin: 80px;
+  margin-bottom: 50px;
+ margin-top: 100px;
+}
+
+.inputs {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-top: 10px;
+  width: 400px;
+  height: 40px;
+  font-family: system-ui;
+  font-size: 15px;
+  letter-spacing: 2px;
+  font-weight: lighter;
+  border: 2px solid #4CAF50; /* Green */
+}
+.container {
+margin-top: 150px;
+}
+.blockone {
+background-color: #474f56;
+}
+.btn-success {
+margin-top: 20px;
+}
+
+body {
+  background-image: url("unsplash.jpg");
+  background-repeat: no-repeat;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body, html {
+  height: 100%;
+}
