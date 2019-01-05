@@ -46,12 +46,22 @@ margin-top: 150px;
 }
 .blockone {
 background-color: #474f56eb;
+color: white;
 }
-.btn-success {
-margin-top: 20px;
+.companyname {
+font-weight: bolder;
+margin-top: 200px;
 }
+
 .btn-secondary {
 margin-top: 20px;
+}
+.knapp{
+padding-top: 15px;
+}
+.compare {
+padding-bottom: 20px;
+margin-left: 30px;
 }
 
 body {
