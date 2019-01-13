@@ -1,19 +1,23 @@
+.dropdown-toggle{
+color: black;
+}
 .rubrik {
-  font-weight: lighter;
+  font-weight: bold;
   font-size: 50px;
   letter-spacing: 2px;
   margin-bottom: 0px;
   margin-top: 30px;
   font-family: system-ui;
-  color: white;
+  color: black;
 }
 p {
 font-size: 20px;
 font-family: system-ui;
+color: black;
 }
 .undertext{
 margin-bottom: 100px;
-color: white;
+color: black;
 font-weight: lighter;
 font-family: system-ui;
 }
@@ -42,11 +46,10 @@ input {
   border: 2px solid #4CAF50; /* Green */
 }
 .container {
-margin-top: 150px;
+margin-top: 320px;
 }
 .blockone {
-background-color: #474f56eb;
-color: white;
+background-color: #ffffff73;
 }
 .companyname {
 font-weight: bolder;
@@ -65,7 +68,7 @@ margin-left: 30px;
 }
 
 body {
-  background-image: url("unsplash.jpg");
+  background-image: url("tree.jpg");
   background-repeat: no-repeat;
   height: 100%;
   background-position: center;

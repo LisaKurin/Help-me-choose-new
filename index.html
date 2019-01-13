@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang=swe>
   <head>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+<title>Hållbarhetschecka</title>
     <!-- Koppling till css -->
         <link href="./new.css" rel="stylesheet" type="text/css">
 <!-- Koppling till bootstrap -->
@@ -11,23 +14,20 @@
 </head>
     <body>
       <!-- navbar -->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav class="nav nav-pills nav-item dropdown">
+<li>
         <a class="navbar-brand" href="#">
             <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/155/deciduous-tree_1f333.png" width="30" height="30" alt="">
           </a>
-<a class="navbar-brand" href="#">Hållbarhetschecka.se</a>
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-  <span class="navbar-toggler-icon"></span>
-</button>
-<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-  <div class="navbar-nav">
-    <a class="nav-item nav-link active" href="#">Hem <span class="sr-only">(current)</span></a>
-    <a class="nav-item nav-link" href="#">Vad är CO2?</a>
-    <a class="nav-item nav-link" href="#">Om oss</a>
-    <form class="form-inline my-2 my-lg-0">
-  </form>
-  </div>
-</div>
+   <a class=" dropdown-toggle navbar-brand" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Hållbarhetschecka.se</a>
+   <div class="dropdown-menu">
+     <a class="dropdown-item" href="#">Företagsscope</a>
+     <a class="dropdown-item" href="#">CO2-avtryck och andra mätetal</a>
+     <a class="dropdown-item" href="#">Om hållbarhetschecka.se</a>
+     <div class="dropdown-divider"></div>
+     <a class="dropdown-item" href="#">Separated link</a>
+   </div>
+ </li>
 </nav>
 <!-- grid 1 på första sidan -->
 <div class="blockone">
